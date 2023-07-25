@@ -52,7 +52,8 @@ def use_logo(index: int):
 def update_package_count() -> None:
     packages: int = int(
         subprocess.run(
-            ["neofetch", "packages", "--package_managers", "off"],
+            "pacman -Q | wc -l",
+            shell=True,
             stdout=subprocess.PIPE,
         ).stdout.decode().split()[-1]
     )

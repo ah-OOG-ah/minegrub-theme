@@ -68,7 +68,7 @@ terminal-font: "Monocraft Regular 22"
 	###
 	############### CHANGE VALUE HERE ################
 
-	top = 40%+314
+	top = 40%+386
 
 	### Don't leave spaces in between the value
 	##################################################
